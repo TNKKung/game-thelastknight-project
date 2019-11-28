@@ -105,7 +105,7 @@ int Xlevel3OR8;
 
 int randomlevel1OR1X()
 {
-	int randomlevel1OR1enyme[4] = {-150,-200,1280,1200 };
+	int randomlevel1OR1enyme[4] = {-150,1280,-200,1200 };
 
 	Xlevel1OR1 = rand() % 4;
 
@@ -114,7 +114,7 @@ int randomlevel1OR1X()
 
 int randomlevel1OR2X()
 {
-	int randomlevel1OR2enyme[4] = { -150,-200,1280,1200 };
+	int randomlevel1OR2enyme[4] = { -150,1280,-200,1200 };
 
 	Xlevel1OR2 = rand() % 4;
 
@@ -123,7 +123,7 @@ int randomlevel1OR2X()
 
 int randomlevel1OR3X()
 {
-	int randomlevel1OR3enyme[4] = { -150,-200,1280,1200 };
+	int randomlevel1OR3enyme[4] = { -150,1280,-200,1200 };
 	
 	Xlevel1OR3 = rand() % 4;
 
@@ -133,9 +133,9 @@ int randomlevel1OR3X()
 
 int randomlevel1OR4X()
 {
-	int randomlevel1OR4enyme[2] = { -200,1280 };
+	int randomlevel1OR4enyme[4] = { -150,1280,-200,1200 };
 
-	Xlevel1OR4 = rand() % 2;
+	Xlevel1OR4 = rand() % 4;
 
 	return randomlevel1OR4enyme[Xlevel1OR4];
 }
@@ -143,18 +143,18 @@ int randomlevel1OR4X()
 
 int randomlevel1OR5X()
 {
-	int randomlevel1OR5enyme[2] = { -200,1280 };
+	int randomlevel1OR5enyme[4] = { -150,1280,-200,1200 };
 
-	Xlevel1OR5 = rand() % 2;
+	Xlevel1OR5 = rand() % 4;
 
 	return randomlevel1OR5enyme[Xlevel1OR5];
 }
 
 int randomlevel1OR6X()
 {
-	int randomlevel1OR6enyme[2] = { -200,1280 };
+	int randomlevel1OR6enyme[4] = { -150,1280,-200,1200 };
 
-	Xlevel1OR6 = rand() % 2;
+	Xlevel1OR6 = rand() % 4;
 
 	return randomlevel1OR6enyme[Xlevel1OR6];
 }
@@ -215,7 +215,7 @@ int randomlevel1OR10X()
 
 int randomlevel2OR1X()
 {
-	int randomlevel2OR1enyme[4] = { -200, -250,1280,1200 };
+	int randomlevel2OR1enyme[4] = { -200,1280,-250,1200 };
 
 	Xlevel2OR1 = rand() % 4;
 
@@ -224,7 +224,7 @@ int randomlevel2OR1X()
 
 int randomlevel2OR2X()
 {
-	int randomlevel2OR2enyme[4] = { -200, -250,1280,1200 };
+	int randomlevel2OR2enyme[4] = { -200,1280, -250,1200 };
 
 	Xlevel2OR2 = rand() % 4;
 
@@ -322,9 +322,9 @@ int randomlevel2OR10X()
 
 int randomlevel3OR1X()
 {
-	int randomlevel3OR1enyme[5] = { -200, -200,-200,1280,1280 };
+	int randomlevel3OR1enyme[5] = { -200,1280,-200,1280 };
 
-	Xlevel3OR1 = rand() % 5;
+	Xlevel3OR1 = rand() % 4;
 
 	return randomlevel3OR1enyme[Xlevel3OR1];
 }
@@ -1070,13 +1070,20 @@ int main()
 			
 			MyHP = 62000;
 			MyHPmon1 = 20000;
+			MyHPmon11 = 20000;
+			MyHPmon12 = 20000;
 			MyHPmon2 = 30000;
+			MyHPmon21 = 30000;
+
 			MyHPmon3 = 40000;
 			shapeSprite.setPosition(450.f, 480.f);
 			level1.setPosition(randomlevel1OR1X(),460.f);
 			level11.setPosition(randomlevel1OR2X(), 460.f);
-			level12.setPosition(randomlevel1OR2X(), 460.f);
-
+			level12.setPosition(randomlevel1OR3X(), 460.f);
+			level13.setPosition(randomlevel1OR4X(), 460.f);
+			level14.setPosition(randomlevel1OR5X(), 460.f);
+			level15.setPosition(randomlevel1OR6X(), 460.f);
+			level16.setPosition(randomlevel1OR7X(), 460.f);
 
 			level2.setPosition(randomlevel2OR1X(),400.f);
 			level21.setPosition(randomlevel2OR2X(), 400.f);
@@ -1090,7 +1097,14 @@ int main()
 			HPmon1.setSize(sf::Vector2f(MyHPmon1 / 320, 5));
 			HPmon11.setSize(sf::Vector2f(MyHPmon11 / 320, 5));
 			HPmon12.setSize(sf::Vector2f(MyHPmon12 / 320, 5));
+			HPmon13.setSize(sf::Vector2f(MyHPmon13 / 320, 5));
+			HPmon14.setSize(sf::Vector2f(MyHPmon14 / 320, 5));
+			HPmon15.setSize(sf::Vector2f(MyHPmon15 / 320, 5));
+			HPmon16.setSize(sf::Vector2f(MyHPmon16 / 320, 5));
+
+
 			HPmon2.setSize(sf::Vector2f(MyHPmon2 / 320, 5));
+			HPmon21.setSize(sf::Vector2f(MyHPmon21 / 320, 5));
 			HPmon3.setSize(sf::Vector2f(MyHPmon3 / 320, 5));
 
 
@@ -1233,6 +1247,10 @@ int main()
 			HPmon1.setPosition(level1.getPosition().x + 50, level1.getPosition().y - 15);
 			HPmon11.setPosition(level11.getPosition().x + 50, level11.getPosition().y - 15);
 			HPmon12.setPosition(level12.getPosition().x + 50, level12.getPosition().y - 15);
+			HPmon13.setPosition(level13.getPosition().x + 50, level13.getPosition().y - 15);
+			HPmon14.setPosition(level14.getPosition().x + 50, level14.getPosition().y - 15);
+			HPmon15.setPosition(level15.getPosition().x + 50, level15.getPosition().y - 15);
+			HPmon16.setPosition(level16.getPosition().x + 50, level16.getPosition().y - 15);
 
 			HPmon2.setPosition(level2.getPosition().x + 50, level2.getPosition().y);
 			HPmon21.setPosition(level21.getPosition().x + 50, level21.getPosition().y);
@@ -1469,7 +1487,73 @@ int main()
 				}
 
 
+				////...............................................four...........................
+				if (time > 20)
+				{
+					if (level12.getPosition().x > shapeSprite.getPosition().x)
+					{
 
+
+						level12.move(-6.0f, 0.f);
+						level12.setTextureRect(sf::IntRect(Mlevel12SizeX * dragonviolet, Mlevel12SizeY * 2, Mlevel12SizeX, 128));
+
+						if (Collision::PixelPerfectTest(shapeSprite, level12))
+						{
+
+
+							level12.setTextureRect(sf::IntRect(Mlevel12SizeX * dragonviolet, Mlevel12SizeY * 3, Mlevel12SizeX, 128));
+							if (dragonviolet == 3)
+							{
+
+								MyHP -= 1000;
+
+								level12.move(30.0f, 0.f);
+								HP.setSize(sf::Vector2f(MyHP / 320, 15));
+							}
+
+							if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
+							{
+								MyHPmon12 -= 2000;
+								HPmon12.setSize(sf::Vector2f(MyHPmon12 / 320, 5));
+
+
+
+							}
+						}
+
+					}
+					if (level12.getPosition().x < shapeSprite.getPosition().x)
+					{
+
+
+						level12.move(+6.0f, 0.f);
+
+						level12.setTextureRect(sf::IntRect(Mlevel12SizeX * dragonviolet, Mlevel12SizeY * 0, Mlevel12SizeX, 128));
+
+						if (Collision::PixelPerfectTest(shapeSprite, level12))
+						{
+
+
+							level12.setTextureRect(sf::IntRect(Mlevel12SizeX * dragonviolet, Mlevel12SizeY * 1, Mlevel12SizeX, 128));
+							if (dragonviolet == 3)
+							{
+
+								MyHP -= 1000;
+
+								level12.move(-30.0f, 0.f);
+								HP.setSize(sf::Vector2f(MyHP / 320, 15));
+							}
+
+							if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
+							{
+								MyHPmon12 -= 2000;
+								HPmon12.setSize(sf::Vector2f(MyHPmon12 / 320, 5));
+
+
+
+							}
+						}
+					}
 
 				
 			}

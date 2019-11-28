@@ -1,0 +1,26 @@
+NAME 			Viking
+ATK 			20
+DEF 			10
+MSPD 			3
+maxHP 			3000
+point			300
+
+face_right_origin	0 0
+face_left_origin        63 0
+
+attack_right_offset     120 70
+attack_right_size	70 70
+attack_left_offset      0 70
+attack_left_size        70 70
+
+sprite_size		64 64
+idle			10 	0 0	3 0
+walk			8 	0 1	7 1
+attack			13 	0 2	10 2
+dead			13 	0 3	16 3
+hurt			13 	0 4	4 4
+
+offset			40 70
+minus_size		80 120
+
+attackSoundPath		src/Resource/SoundFX/Enemy/attack_slash.ogg

@@ -32,7 +32,8 @@
  *
  * Created on 30 January 2009, 11:02
  */
-
+#include <SFML/Graphics.hpp>
+#include <SFML\Graphics\Sprite.hpp>
 #ifndef COLLISION_H
 #define COLLISION_H
 

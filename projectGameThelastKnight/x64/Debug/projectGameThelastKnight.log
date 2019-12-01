@@ -1,8 +1,5 @@
 ﻿  main.cpp
 C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(448,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(519,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(524,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(529,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(560,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(567,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(644,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
@@ -53,22 +50,22 @@ C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(1774,4
 C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(1838,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(1913,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(1976,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2045,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2104,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2167,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2230,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2295,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2357,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2421,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2482,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2551,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2611,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2045,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2104,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2167,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2230,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2295,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2357,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2421,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2482,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2551,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2611,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2683,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2744,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2814,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2873,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2940,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(3001,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2814,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2873,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(2940,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(3001,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(3074,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(3136,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\projectGame\projectGameThelastKnight\projectGameThelastKnight\main.cpp(3204,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data

@@ -147,9 +147,9 @@ int randomposionfor2()
 
 int randomposionfor3()
 {
-	int randomposionfor3[11] = {-200, 110, 150,-200,250,500,450,-500,650,-500,750 };
+	int randomposionfor3[7] = { 110, 150,250,500,450,650,750 };
 
-	posionFOR3 = rand() % 11;
+	posionFOR3 = rand() % 7;
 
 	return randomposionfor3[posionFOR3];
 }
@@ -157,18 +157,18 @@ int randomposionfor3()
 
 int randomatk1()
 {
-	int randomatk1[30] = { -200,-200,-200,-200,-200 ,-200,-200,-200,-200,-200,-200,-200,-200,-200,-200 ,-200,-200,-200,-200,-200, -110,150,-200,250,-500,450,-500,650,-500,750 };
+	int randomatk1[20] = { -200,-200,-200,-200,-200 ,-200,-200,-200,-200,-200, -110,150,-200,250,-500,450,-500,650,-500,750 };
 
-	atk1 = rand() % 30;
+	atk1 = rand() % 20;
 
 	return randomatk1[atk1];
 }
 
 int randomdef1()
 {
-	int randomdef1[5] = { 150,250,450,650,750 };
+	int randomdef1[19] = { -200,-200,-200,-200,-200 -200,-200,-200,-200,-200 ,-200,-200,-200,-200, 150,250,450,650,750 };
 
-	def1 = rand() % 5;
+	def1 = rand() % 19;
 
 	return randomdef1[def1];
 }
@@ -516,37 +516,37 @@ int main()
 	Posion.loadFromFile("item/Posion.png");
 	sf::Sprite posion(Posion);
 	posion.setScale(3.0f, 3.0f);
-	posion.setPosition(randomposionfor1(), 500);
-
-
-	sf::Sprite posionwith2(Posion);
-	posionwith2.setScale(3.0f, 3.0f);
-	posionwith2.setPosition(randomposionfor2(), 500);
-
-
-	sf::Sprite posionwith3(Posion);
-	posionwith3.setScale(3.0f, 3.0f);
-	posionwith3.setPosition(randomposionfor3(), 500);
-
-
-
-
-
-
+	
 
 
 	sf::Sprite posion2(Posion);
 	posion2.setScale(3.0f, 3.0f);
-
 	
 
 
 	sf::Sprite posion3(Posion);
 	posion3.setScale(3.0f, 3.0f);
+	
 
 
-	sf::Sprite posion4(Posion);
-	posion4.setScale(3.0f, 3.0f);
+
+
+
+
+
+
+	sf::Sprite posionwith1(Posion);
+	posionwith1.setScale(3.0f, 3.0f);
+
+	
+
+
+	sf::Sprite posionwith2(Posion);
+	posionwith2.setScale(3.0f, 3.0f);
+
+
+	sf::Sprite posionwith3(Posion);
+	posionwith3.setScale(3.0f, 3.0f);
 
 	
 
@@ -1341,13 +1341,13 @@ int main()
 			atk.setPosition(-200, 500);
 			def.setPosition(-200, 500);
 			posion.setPosition(-200,500);
-			posionwith2.setPosition(-300, 500);
-			posionwith3.setPosition(-400, 500);
+			posion2.setPosition(-300, 500);
+			posion3.setPosition(-400, 500);
 
 
-			posion2.setPosition(-70, 70);
-			posion3.setPosition(-120, 70);
-			posion4.setPosition(-170, 70);
+			posionwith1.setPosition(-70, 70);
+			posionwith2.setPosition(-120, 70);
+			posionwith3.setPosition(-170, 70);
 
 
 			
@@ -1506,12 +1506,12 @@ int main()
 			window.draw(atk);
 			window.draw(def);
 			window.draw(posion);
-			window.draw(posionwith2);
-			window.draw(posionwith3);
-
 			window.draw(posion2);
 			window.draw(posion3);
-			window.draw(posion4);
+
+			window.draw(posionwith1);
+			window.draw(posionwith2);
+			window.draw(posionwith3);
 			
 
 			HPmon1.setPosition(level1.getPosition().x + 50, level1.getPosition().y - 15);
@@ -1613,26 +1613,26 @@ int main()
 				}
 			}
 
-			if (Collision::PixelPerfectTest(shapeSprite, posionwith2))
+			if (Collision::PixelPerfectTest(shapeSprite, posion2))
 			{
 				hpbuttom = true;
 				if (sf::Keyboard::isKeyPressed(sf::Keyboard::F))
 				{
 					scoreHP += 1;
 
-					posionwith2.setPosition(-200, 500);
+					posion2.setPosition(-200, 500);
 				}
 			}
 
 
-			if (Collision::PixelPerfectTest(shapeSprite, posionwith3))
+			if (Collision::PixelPerfectTest(shapeSprite, posion3))
 			{
 				hpbuttom = true;
 				if (sf::Keyboard::isKeyPressed(sf::Keyboard::F))
 				{
 					scoreHP += 1;
 
-					posionwith3.setPosition(-200, 500);
+					posion3.setPosition(-200, 500);
 				}
 			}
 
@@ -1642,7 +1642,7 @@ int main()
 				if (scoreHP == 1)
 				{
 
-					posion2.setPosition(-500, 100);
+					posionwith1.setPosition(-500, 100);
 
 					MyHP += 10000;
 
@@ -1655,7 +1655,7 @@ int main()
 				if (scoreHP == 2)
 				{
 
-					posion3.setPosition(-500, 100);
+					posionwith2.setPosition(-500, 100);
 
 					MyHP += 10000;
 
@@ -1667,7 +1667,7 @@ int main()
 
 				if (scoreHP == 3)
 				{
-					posion4.setPosition(-500, 100);
+					posionwith3.setPosition(-500, 100);
 
 					MyHP += 10000;
 
@@ -1683,19 +1683,19 @@ int main()
 			}
 			if (scoreHP == 1)
 			{
-				posion2.setPosition(70, 70);
+				posionwith1.setPosition(70, 70);
 				
 			}
 			if (scoreHP == 2)
 			{
-				posion2.setPosition(70, 70);
-				posion3.setPosition(120, 70);
+				posionwith1.setPosition(70, 70);
+				posionwith2.setPosition(120, 70);
 			}
 			if (scoreHP == 3)
 			{
-				posion2.setPosition(70, 70);
-				posion3.setPosition(120, 70);
-				posion4.setPosition(170, 70);
+				posionwith1.setPosition(70, 70);
+				posionwith2.setPosition(120, 70);
+				posionwith3.setPosition(170, 70);
 			}
 			if (scoreHP >= 3)
 			{
@@ -1910,7 +1910,7 @@ int main()
 							
 							if (MyHPmon11 <= 1)
 							{
-								posion2.setPosition(randomposionfor2(), 500);
+								posion3.setPosition(randomposionfor2(), 500);
 
 							}
 
@@ -1973,7 +1973,7 @@ int main()
 							}
 							if (MyHPmon11 <= 1)
 							{
-								posion2.setPosition(randomposionfor2(), 500);
+								posion3.setPosition(randomposionfor2(), 500);
 
 							}
 						}
@@ -2042,7 +2042,7 @@ int main()
 						
 							if (MyHPmon12 <= 1)
 							{
-								posion.setPosition(randomposionfor1(), 500);
+								posion2.setPosition(randomposionfor1(), 500);
 
 							}
 						}
@@ -2101,7 +2101,7 @@ int main()
 
 							if (MyHPmon12 <= 1)
 							{
-								posion.setPosition(randomposionfor1(), 500);
+								posion2.setPosition(randomposionfor1(), 500);
 
 							}
 
@@ -2164,7 +2164,7 @@ int main()
 							}
 							if (MyHPmon13 <= 1)
 							{
-								posion2.setPosition(randomposionfor2(), 500);
+								posion.setPosition(randomposionfor2(), 500);
 
 							}
 
@@ -2227,7 +2227,7 @@ int main()
 
 							if (MyHPmon13 <= 1)
 							{
-								posion2.setPosition(randomposionfor2(), 500);
+								posion.setPosition(randomposionfor2(), 500);
 
 							}
 						}
@@ -2292,7 +2292,7 @@ int main()
 							}
 							if (MyHPmon14 <= 1)
 							{
-								posion.setPosition(randomposionfor1(), 500);
+								posion3.setPosition(randomposionfor1(), 500);
 
 							}
 
@@ -2354,7 +2354,7 @@ int main()
 
 							if (MyHPmon14 <= 1)
 							{
-								posion.setPosition(randomposionfor1(), 500);
+								posion3.setPosition(randomposionfor1(), 500);
 
 							}
 
@@ -2418,7 +2418,7 @@ int main()
 							}
 							if (MyHPmon15 <= 1)
 							{
-								posion.setPosition(randomposionfor1(), 500);
+								posion2.setPosition(randomposionfor1(), 500);
 
 							}
 
@@ -2479,7 +2479,7 @@ int main()
 							}
 							if (MyHPmon15 <= 1)
 							{
-								posion.setPosition(randomposionfor1(), 500);
+								posion2.setPosition(randomposionfor1(), 500);
 
 							}
 						}
@@ -2548,7 +2548,7 @@ int main()
 							}
 							if (MyHPmon16 <= 1)
 							{
-								posion2.setPosition(randomposionfor3(), 500);
+								posion.setPosition(randomposionfor3(), 500);
 
 							}
 
@@ -2608,7 +2608,7 @@ int main()
 							}
 							if (MyHPmon16 <= 1)
 							{
-								posion2.setPosition(randomposionfor2(), 500);
+								posion.setPosition(randomposionfor2(), 500);
 
 							}
 
@@ -2680,7 +2680,7 @@ int main()
 
 							if (MyHPmon17 <= 1)
 							{
-								posion2.setPosition(randomposionfor2(), 500);
+								posion3.setPosition(randomposionfor2(), 500);
 
 							}
 						}
@@ -2741,7 +2741,7 @@ int main()
 
 							if (MyHPmon17 <= 1)
 							{
-								posion2.setPosition(randomposionfor2(), 500);
+								posion3.setPosition(randomposionfor2(), 500);
 
 							}
 						}
@@ -2811,7 +2811,7 @@ int main()
 							}
 							if (MyHPmon18 <= 1)
 							{
-								posion.setPosition(randomposionfor1(), 500);
+								posion2.setPosition(randomposionfor1(), 500);
 
 							}
 						}
@@ -2870,7 +2870,7 @@ int main()
 							}
 							if (MyHPmon18 <= 1)
 							{
-								posion.setPosition(randomposionfor1(), 500);
+								posion2.setPosition(randomposionfor1(), 500);
 
 							}
 
@@ -2937,7 +2937,7 @@ int main()
 
 							if (MyHPmon19 <= 1)
 							{
-								posion2.setPosition(randomposionfor2(), 500);
+								posion.setPosition(randomposionfor2(), 500);
 
 							}
 						}
@@ -2998,7 +2998,7 @@ int main()
 
 							if (MyHPmon19 <= 1)
 							{
-								posion2.setPosition(randomposionfor2(), 500);
+								posion.setPosition(randomposionfor2(), 500);
 
 							}
 

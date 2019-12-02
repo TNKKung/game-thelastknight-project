@@ -129,27 +129,27 @@ int def1;
 //...........................................random posion
 int randomposionfor1()
 {
-	int randomposionfor1[7] = {  110, 150,250,500,450,650,750 };
+	int randomposionfor1[12] = { -200,-200,-200,-200,-200 , 110, 150,250,500,450,650,750 };
 
-	posionFOR1 = rand() % 7;
+	posionFOR1 = rand() % 12;
 
 	return randomposionfor1[posionFOR1];
 }
 
 int randomposionfor2()
 {
-	int randomposionfor2[7] = { 110, 150,250,500,450,650,750 };
+	int randomposionfor2[12] = { -200,-200,-200,-200,-200 , 110, 150,250,500,450,650,750 };
 
-	posionFOR2 = rand() % 7;
+	posionFOR2 = rand() % 12;
 
 	return randomposionfor2[posionFOR2];
 }
 
 int randomposionfor3()
 {
-	int randomposionfor3[7] = { 110, 150,250,500,450,650,750 };
+	int randomposionfor3[12] = { -200,-200,-200,-200,-200 , 110, 150,250,500,450,650,750 };
 
-	posionFOR3 = rand() % 7;
+	posionFOR3 = rand() % 12;
 
 	return randomposionfor3[posionFOR3];
 }
@@ -157,18 +157,18 @@ int randomposionfor3()
 
 int randomatk1()
 {
-	int randomatk1[20] = { -200,-200,-200,-200,-200 ,-200,-200,-200,-200,-200, -110,150,-200,250,-500,450,-500,650,-500,750 };
+	int randomatk1[16] = {-200 ,-200,-200,-200,-200,-200, -110,150,-200,250,-500,450,-500,650,-500,750 };
 
-	atk1 = rand() % 20;
+	atk1 = rand() % 16;
 
 	return randomatk1[atk1];
 }
 
 int randomdef1()
 {
-	int randomdef1[19] = { -200,-200,-200,-200,-200 -200,-200,-200,-200,-200 ,-200,-200,-200,-200, 150,250,450,650,750 };
+	int randomdef1[16] = { -200 -200,-200,-200,-200,-200 ,-200,-200,-200,-200, 150,250,450,650,750 };
 
-	def1 = rand() % 19;
+	def1 = rand() % 16;
 
 	return randomdef1[def1];
 }
@@ -2239,7 +2239,7 @@ int main()
 			}
 
 			////...............................................five...........................
-			if (time > 34)
+			if (time > 35)
 			{
 				if (level14.getPosition().x > shapeSprite.getPosition().x)
 				{
@@ -2758,7 +2758,7 @@ int main()
 
 			///**********************nine
 
-			if (time >51)
+			if (time >55)
 			{
 				if (level18.getPosition().x > shapeSprite.getPosition().x)
 				{
@@ -2882,7 +2882,7 @@ int main()
 
 			///**************ten........................
 
-			if (time >49)
+			if (time >58)
 			{
 				if (level19.getPosition().x > shapeSprite.getPosition().x)
 				{
@@ -3676,7 +3676,7 @@ int main()
 			//...........................................monter level3........................
 
 			///one
-			if (time > 32)
+			if (time > 15)
 			{
 				if (level3.getPosition().x > shapeSprite.getPosition().x)
 				{
@@ -3802,7 +3802,7 @@ int main()
 			}
 
 			//two
-			if (time > 24)
+			if (time > 30)
 			{
 				if (level31.getPosition().x > shapeSprite.getPosition().x)
 				{
@@ -3936,7 +3936,7 @@ int main()
 
 
 			//three
-			if (time >42)
+			if (time >45)
 			{
 				if (level32.getPosition().x > shapeSprite.getPosition().x)
 				{
@@ -4061,7 +4061,7 @@ int main()
 			}
 
 			//four
-			if (time > 55)
+			if (time > 60)
 			{
 				if (level33.getPosition().x > shapeSprite.getPosition().x)
 				{

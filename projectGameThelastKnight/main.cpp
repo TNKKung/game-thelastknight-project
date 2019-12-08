@@ -721,6 +721,7 @@ int main()
 	shapeSprite.setTextureRect(sf::IntRect(0, 0, spriteSizeX, spriteSizeY));
 	sf::Vector2f spawnPoint = { 450.f, 460.f };
 	shapeSprite.setPosition(spawnPoint);
+	shapeSprite.setTextureRect(sf::IntRect(0,0,32,32));
 	
 	
 	
@@ -13342,7 +13343,7 @@ int main()
 					}
 					else
 					{
-						if (playerInput.getSize() < 9)
+						if (playerInput.getSize() < 10)
 						{
 							if (debouce > 0.2)
 							{
